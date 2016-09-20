@@ -16,16 +16,16 @@ The second option takes as input a table of your own and execute the "corr_matri
 
 The first function "sorting":
 
-1- It sorts the dataframe by rtmed column.
-2- It computes the mean operation of all the signal values of the metabolites by sample, and put the results in a new column "signal_moy".
-3- It finally creates a tabular output "sorted_table.tsv".
+1. It sorts the dataframe by rtmed column.
+2. It computes the mean operation of all the signal values of the metabolites by sample, and put the results in a new column "signal_moy".
+3. It finally creates a tabular output "sorted_table.tsv".
     
 The second function "corrdel" for each pcgroup of the previous sorted tabular file "sorted_table.tsv", does the following things:
 
-1- The first metabolite which has the highest value of mean signal intensity is selected.
-2- Computes a global correlation matrix. 
-3- Select the metabolites which are not correlated to others from the same pcgroup based on a threshold value "Correlation threshold".
-4- It creates two tabular files: "correlation_matrix.tsv" (correlation matrix of all the metabolites) and "selected_metabolites_transpo.tsv" (metabolites tagged as deleted are removed and the dataframe is transposed)
+1. The first metabolite which has the highest value of mean signal intensity is selected.
+2. Computes a global correlation matrix. 
+3. Select the metabolites which are not correlated to others from the same pcgroup based on a threshold value "Correlation threshold".
+4. It creates two tabular files: "correlation_matrix.tsv" (correlation matrix of all the metabolites) and "selected_metabolites_transpo.tsv" (metabolites tagged as deleted are removed and the dataframe is transposed)
 
 The "corr_matrix" function computes a correlation matrix named "correlation_matrix.tsv" and creates a sif file named "sif_table.tsv" (for visualization in CytoScape).v
 
